@@ -1,4 +1,17 @@
- #nav{
-    float: right;
+ /* .logo{
+    float: left;
 
-} 
+}  */
+
+/* a:hover {
+    background-color: rgb(247, 233, 36);
+color: darkblue;
+font-weight: 500;
+} */
+
+li a:hover {
+    background-color: rgb(247, 233, 36);
+color: darkblue;
+font-weight: 800;
+}
+
