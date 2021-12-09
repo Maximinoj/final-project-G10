@@ -23,4 +23,4 @@ class productsController {
     }
 }
 
-console.log()
+console.log(this.productArray);
