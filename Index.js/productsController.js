@@ -17,10 +17,35 @@ class productsController {
             description,
            
         };
+        
 
         // Push the item to the items property
         this.productArray.push(product);
+        this.setLocalStorage();
+        
+
+    }
+
+    setLocalStorage() {
+        let storeProduct = JSON.stringify(this.productArray);
+        localStorage.setItem('item', storeProduct);
+        let currentID = JSON.stringify(this.currentId);
+        localStorage.setItem('currentId', currentID);
+    
+    }
+
+    loadLocalStorage(){
+        if(localStorage.getItem('item')){
+            let productArrayJson = localStorage.getItem('item');
+            this.item = JSON.parse(productArrayJson);   
+        }
+        if(localStorage.getItem('currentId')) {
+            let currentIdString = localStorage.getItem('currentId');
+            this.currentId = Number(currentIdString);
+        }
+
     }
 }
 
-console.log(this.productArray);
+// console.log(setLocalStorage);
+

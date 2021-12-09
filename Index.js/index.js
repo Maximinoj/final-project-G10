@@ -6,6 +6,7 @@ const itemRows = document.getElementById('newItems');
 const addSubmit = document.getElementById("submitbtn");
 
 // Add an 'onsubmit' event listener
+productManager.loadLocalStorage();
 addSubmit.addEventListener('click', function(event){
     // Prevent default action
     event.preventDefault();
@@ -56,6 +57,9 @@ itemRows.append(newRow);
 console.log(newRow.innerHTML);
 }
 
+console.log(productManager.productArray);
+
+console.log(productManager.productArray);
 
 
 
