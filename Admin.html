@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Add Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='./style.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <div class="row">
+                <div class=col>
+                     <a href='./HomeCustomer.html'> 
+                       <img class='col-1 justify-content-left' title='4eignGifts Logo' alt='4eignGifts Logo' src="./Pictures.img/4eignGifts.png"> 
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+
+                </div>    
+                    <div class='col-4 justify-content-right mt-4'>   
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                   <a class="nav-link" title='HomeCustomer' alt='HomeCustomer' href="./HomeCustomer.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" title='Login/SignUp' alt='Login/SignUp' href="./Login.html">Login/SignUp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" title='Cart/Check Out' alt='Cart/Check Out' href="#">Cart/CheckOut</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active"  aria-current="page" alt='Contact US' title='Contact US' href='./Contact.html'>Contact US</a>
+                               </li>
+                            </ul>
+                        </div>
+                   </div>         
+            </div>        
+        </nav>
+    </header> 
+
+
+    <br>
+    <div class='container'>
+        <div class="row justify-content-center"> 
+            <div class='col-6'>     
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="product-name">Product Name</span>
+                    </div>
+                    <input id="productName"type="text" class="form-control" placeholder="Product Name" aria-label="Product Name" aria-describedby="product-name">
+                </div>
+ 
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="PictureURL">Picture URL</span>
+                    </div>
+                    <input type="text" class="form-control" id="picture-url" aria-describedby="PictureURL">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Price</span>
+                    </div>
+                    <input id ="price" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                    <span class="input-group-text" >.00</span>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Description</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" id = "description"></textarea>
+                </div>
+            </div>
+           
+        </div>
+          <div>   
+            <div class="row justify-content-center"> 
+               <div class='col-auto'> 
+                 <button id ='submitbtn' type="submit" title='Submit' class="btn btn-primary">Submit</button>
+                </div>
+            </div>     
+        </div>  
+
+      <br>
+    <header class="container-fluid"> 
+            <div class ='col-8 justify-content-center mt-5'>
+               <div class="row">
+                   
+
+                    
+                    <!-- <div class="input-group mb-3">
+                        <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                        <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+    </header>
+
+
+    <script src='JS/itemsController.js'></script>
+    <script src='JS/index.js'></script>
+    
+</body>
