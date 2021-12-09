@@ -43,9 +43,15 @@ addSubmit.addEventListener('click', (event) => {
 
 const addItemToProductList = (item) => {
         console.log(item);
-        let newRow = 
+        let newRow = document.createElement("tr")
+        newRow.innerHTML = `<tr>
+        <th scope = "row"> <img class="img-thumbnail" src="${item.pURL}"></th>
+        <td>${item.pName}</td>
+        <td>${item.pPrice}</td>
+        <td>${item.pDescription}</td>
 
-
+</tr>`;
+itemRows.append(newRow);
 }
 
 
