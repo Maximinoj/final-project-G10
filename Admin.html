@@ -84,6 +84,7 @@
            
         </div>
           <div>   
+           <br>
             <div class="row justify-content-center"> 
                <div class='col-auto'> 
                  <button id ='submitbtn' type="submit" title='Submit' class="btn btn-primary">Submit</button>
@@ -92,12 +93,28 @@
         </div>  
 
       <br>
-    <header class="container-fluid"> 
-            <div class ='col-8 justify-content-center mt-5'>
-               <div class="row">
-                   
+   
+         <br>  
+         <div class='container justify-content-center'>
+                    <div class="input-group mb-3">
+                <table class="table">
+                    <caption>List of users</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Product Picture</th>
+                        <th scope="col">Product name</th>
+                        <th scope="col">Product Price</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody id = newItems>
+                      
+                    </tbody>
+                  </table>
+                </div>
+            </div>    
 
-                    
+                         
                     <!-- <div class="input-group mb-3">
                         <div class="custom-file">
                         <input type="file" class="custom-file-input" id="inputGroupFile02">
@@ -109,10 +126,9 @@
                     </div> -->
                 </div>
             </div>
-    </header>
 
 
-    <script src='JS/itemsController.js'></script>
+    <script src='JS/productsController.js'></script>
     <script src='JS/index.js'></script>
     
 </body>

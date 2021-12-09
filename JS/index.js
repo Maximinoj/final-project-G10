@@ -2,15 +2,16 @@
 const productManager = new productsController(0);
 
 // Select the New Task Form
+const itemRows = document.getElementById('newItems');
 const addSubmit = document.getElementById("submitbtn");
 
 // Add an 'onsubmit' event listener
-addSubmit.addEventListener('click', (event) => {
+addSubmit.addEventListener('click', function(event){
     // Prevent default action
     event.preventDefault();
 
     // Select the inputs
-   let pName = document.getElementById('product-name');
+   let pName = document.getElementById('productName');
    let pURL = document.getElementById('picture-url');
    let pPrice = document.getElementById('price');
    let pDescription = document.getElementById('description');
@@ -46,12 +47,13 @@ const addItemToProductList = (item) => {
         let newRow = document.createElement("tr")
         newRow.innerHTML = `<tr>
         <th scope = "row"> <img class="img-thumbnail" src="${item.pURL}"></th>
-        <td>${item.pName}</td>
+        <td >${item.pName}</td>
         <td>${item.pPrice}</td>
         <td>${item.pDescription}</td>
 
 </tr>`;
 itemRows.append(newRow);
+console.log(newRow.innerHTML);
 }
 
 
