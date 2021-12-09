@@ -52,7 +52,6 @@ const addItemToProductList = (item) => {
 
 
 
-
 // function addItemCard(item){
 //     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
 //         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
